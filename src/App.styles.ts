@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #17181f;
+  background-color: #1c232e ;
   color: #797a81;
   min-height: 100vh;
 `;
@@ -17,6 +17,6 @@ export const Header = styled.h1`
   padding: 0;
   color: #fff;
   text-align: center;
-  border-bottom: 1px solid #444;
+  border-bottom: 2px solid #444;
   padding-bottom: 20px;
 `;
