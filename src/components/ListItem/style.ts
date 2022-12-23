@@ -9,6 +9,7 @@ export const Container = styled.div`
   border: 5px solid rgba(15, 104, 75, 0.6);
   border-radius: 0px 20px 20px 20px;
   
+  
   input {
     width: 25px;
     height: 25px;
