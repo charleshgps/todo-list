@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type ContainerProps = {
+  done: boolean;
+};
+
+export const Container = styled.div(
+  ({ done }: ContainerProps) =>(
+    `
   display: flex;
   background-color: #03484c;
   padding: 10px;
@@ -8,8 +14,7 @@ export const Container = styled.div`
   align-items: center;
   border: 5px solid rgba(15, 104, 75, 0.6);
   border-radius: 0px 20px 20px 20px;
-  
-  
+
   input {
     width: 25px;
     height: 25px;
@@ -18,8 +23,10 @@ export const Container = styled.div`
 
   label {
     color: #fff;
+    text-decoration: ${done ? "line-through" : "initial"};
   }
-`;
+`
+));
 
 /*.color1 { #53ac59 };
 .color2 { #3b8952 };
