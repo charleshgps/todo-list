@@ -22,7 +22,7 @@ export const Container = styled.div(
   }
 
   label {
-    color: #fff;
+    color: #ffffff;
     text-decoration: ${done ? "line-through" : "initial"};
   }
 `
